@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body{
+    background-color: black;
+  }
+
+  .home{    
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.formatvideo{
+    position: fixed !important;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    /* min-width: 100%;
+    min-height: 100%; */
+    width: 1925px;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -15;
+   }
+
+   #ltn{
+
+    z-index: 5;
+    font-family: sans-serif;
+    font-size: 28px;
+    opacity: .63;
+    font-family: enter;
+    color: whitesmoke;
+    text-decoration: none;
+    animation: 7s ltn normal;
+}
+
+@keyframes ltn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#enter{
+    position: absolute;
+    top: 93%;
+    left: 50%;
+}
+
+#ltn:hover{
+  opacity: .8;
+}
+
+@font-face {
+  font-family: enter;
+  src: url("../assets/text/LexendZetta-Thin.ttf");
+}
+
+
+/* Navagtion */
+
+
+@font-face {
+  font-family: bold;
+  src: url("../assets/text/LexendZetta-Thin.ttf");
+}
+
+
+#nav2{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+  .lint{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10% 30% 50% 70%;
+    align-items: center;
+    margin: 100px;
+    border-radius: 100px;
+      color: white;
+      font-family: bold;
+      text-decoration: none;
+
+      animation: 1s nav normal;
+  }
+
+@keyframes nav{
+  from{
+  opacity: 0;
+}
+to{
+  opacity: 1;
+}
+}
+  .lint:hover{
+    transition-duration: 1s;
+    box-shadow:
+    inset 0 0 20px blue,      
+    inset 20px 0 20px blue,   
+    inset -20px 0 80px blue,  
+    inset 20px 0 20px blueviolet,  
+    inset -20px 0 300px blue, 
+    0 0 50px blue,            
+    -10px 0 400px blueviolet,      
+    10px 0 400px blue;    
+  }
+
+  /* ABOUT */
+
+  @font-face {
+    font-family: dark;
+    src: url(../assets/text/LexendZetta-Light.ttf);
+  }
+ 
+#header{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 7%;
+}
+#prof{
+  width: 30vw;
+  top: -5vh;
+  animation: 5s squ normal;
+}
+
+
+#name{
+  margin-top: 5%;
+  font-family: dark;
+  color: rgb(250, 250, 250);
+  font-size: 400%;
+  letter-spacing: 1vw;
+}
+
+#boxstatement{
+  padding-left: 7vw;
+  padding-right: 22vw;
+  top: 35%;
+  width: 80vw;
+  position: absolute;
+}
+
+#artiststatement{
+  margin-top: 3%;
+  font-family: dark;
+  color: rgb(250, 250, 250);
+  font-size: 110%;
+  letter-spacing: .2vw;
+  text-indent: 13%;
+}
+
+#add{
+  margin-top: 3%;
+  font-family: dark;
+  color: rgb(95, 95, 95);
+  font-size: 85%;
+  letter-spacing: .2vw;
+}
+
+
+#cv{
+  animation: 2.5s cv normal;
+
+}
+
+@keyframes cv{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#boxstatement{
+  animation: 3.5s boxstatement normal;
+
+}
+
+@keyframes boxstatement{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+  /* WORK */
+
+  #workbuttons{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: butts 1s normal;
+    display: flex;
+  }
+
+  .buttons{
+    justify-content: center;
+    position: static;
+    display: flex;
+    width: 20vw;
+    height: 5vh;
+    align-items: center;
+    border-radius: 100px;
+    border: .005vw solid rgb(250, 250, 250);
+
+    margin: 2vw;
+  }
+
+  .buttons:hover{
+
+    border: rgb(255, 255, 255);
+  }
+
+  .buttons:hover{
+    transition-duration: .6s;
+    background-color: rgb(152, 152, 152);
+
+  }
+
+  .ww{
+    animation: ww 8s normal;
+    color:rgb(217, 217, 217);
+    font-family: bold;
+    text-decoration: none;
+    font-size: larger;
+    letter-spacing: .35vw;
+  }
+  
+  .ww:hover{
+    color: rgb(217, 217, 217);
+  }
+
+  @keyframes ww {
+    from {
+      opacity: 0;
+  
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes butts {
+    from {
+      opacity: 0;
+  
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #work{
+    overflow-y: hidden;
+  }
+
+  #photo{
+    animation: photo 5s normal;
+  }
+
+  #film{
+    animation: film 5s normal;
+  }
+
+  #modeling{
+    animation: modeling 5s normal;
+  }
+
+  #colab{
+    animation: colab 5s normal;
+  }
+
+@keyframes photo {
+  from {
+    width: 3vw;
+    /* transform: translateX(0vw); */
+
+  }
+  to {
+    width: 20vw;
+    /* transform: translateX(100vw); */
+
+  }
+}
+
+@keyframes film {
+  from {
+    width: 3vw;
+    /* transform: translateX(opx); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+@keyframes colab {
+  from {
+    width: 3vw;
+    /* transform: translateX(0px); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+@keyframes modeling {
+  from {
+    width: 3vw;
+    /* transform: translateX(0px); */
+
+  }
+  to {
+    width: 20vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+#Photography{
+position: relative;
+display: flex;
+justify-content: center;
+align-content: center;
+
+
+}
+
+.pbox{
+position: relative;
+
+
+}
+
+.pics{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.return {
+  width: 220px;
+  height: 220px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  }
+
+.nv{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+#n{
+
+  
+  animation: 10s n infinite;
+  position: absolute;
+  
+}
+#w{
+  animation: 8s w infinite;
+  position: absolute;
+}
+#x{
+
+  animation: 2s x infinite;
+  position: absolute;
+}
+#a{
+  animation: 6s a infinite;
+  position: absolute;
+}
+#p{
+  animation: 4s p infinite;
+  position: absolute;
+}
+@keyframes x{
+  50% {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@keyframes w{
+  50% {transform: translate(-50%, -50%) rotate(-240deg);}
+}
+
+@keyframes n{
+  50% {transform: translate(-50%, -50%) rotate(180deg);}
+}
+
+@keyframes a{
+  50% {transform: translate(-50%, -50%) rotate(-270deg);}
+}
+
+@keyframes p{
+  50% {transform: translate(-50%, -50%) rotate(180deg);}
+}
+
+/* photos */
+/* 
+.carousel{
+width: 100vw;
+height: 100vh;
+position: relative;
+
+}
+
+.picss{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opactiy ease-in-out;
+  transition-delay: 200ms;
+}
+
+.picss > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.picss[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button{
+  position :absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  color: rgba(245, 245, 245, .5);
+  transform: translateY(-50%);
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}  
+
+.carousel > ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+
+.carousel-button.prev{
+  left: 1rem;
+}
+
+.carousel-button.next{
+  right: 1rem;
+} */
+
+.carousel {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 1000ms opacity ease-in-out;
+  transition-delay: 1000ms;
+}
+
+.slide > img {
+  display: block;
+max-height: 70%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(250, 33, 33, 0);
+  cursor: pointer;
+  height: 2%;
+  width: 1%;
+  background-color: darkred;
+  border-radius: 100px;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+
+  transition-duration: 2s;
+  box-shadow:
+  inset 0 0 20px rgb(0, 0, 0),      
+  inset 20px 0 20px #000000,   
+  -10px 0 400px rgb(0, 0, 0),      
+  10px 0 400px rgba(0, 0, 0, 0.527);    
+}
+
+.carousel-button:focus {
+  outline: none;
+}
+
+.carousel-button.prev {
+  left: 4%;
+  opacity: 0;
+}
+
+.carousel-button.next {
+  right: 4%;
+}
+
+.carousel{
+  animation: 5s timi ease-in;
+  
+}
+
+@keyframes timi{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.btsy{
+  border: white;
+  height: auto;
+  background-color: white;
+}
+
+#photobod{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.vids{
+  max-height: 70%;
+}
+
+                                        /* VIDEOS */
+
+#glitch{
+opacity: 1;
+
+}
+
+
+
+.films{
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  transform: translateX(15vw) translateY(15vh);
+}
+
+/* .VIDEOSSS{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: absolute;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+} */
+
+.formatvideo{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#videobuttons{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    width: 70vw;
+}
+
+#videobuttons{
+  animation: 2.5s cv normal;
+
+}
+
+@keyframes videobuttons{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.buttonsvideo{
+  justify-content: center;
+  position: static;
+  display: flex;
+  width: 70vw;
+  height: 5vh;
+  align-items: center;
+  border-radius: 100px;
+  border: .005vw solid rgb(255, 0, 0);
+  background-color:rgb(201, 1, 1);
+
+  margin: 2vw;
+}
+
+.buttonsvideo:hover{
+
+  border: rgb(255, 255, 255);
+}
+
+.buttonsvideo:hover{
+  transition-duration: .6s;
+  background-color:rgb(255, 0, 0);
+  ;
+}
+
+.vv{
+  animation: ww 1s normal;
+  color:rgb(255, 255, 255);
+  font-family: bold;
+  text-decoration: none;
+  font-size: larger;
+  letter-spacing: .35vw;
+}
+
+.vv:hover{
+  color: rgb(217, 217, 217);
+}
+
+@keyframes vv {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  #xxx{
+    animation: photo 2s normal;
+  }
+
+@keyframes photo {
+  from {
+    width: 3vw;
+    /* transform: translateX(0vw); */
+
+  }
+  to {
+    width: 20vw;
+    /* transform: translateX(100vw); */
+
+  }
+}
+
+@keyframes xxx {
+  from {
+    width: 3vw;
+    transform: translateX(opx);
+
+  }
+  to {
+    width: 3vw;
+
+    /* transform: translateX(2000px); */
+
+  }
+}
+
+
+
+                                            /* PHOTOS */
+
+#imagays{
+    overflow-x: inherit;
+    overflow-y: inherit;
+}
+@font-face {
+    font-family: enter;
+    src: url("assets/text/LexendZetta-Thin.ttf");
+  }
+.series1container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 5vw;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.series1containerpost{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 5vw;
+}
+.gallerypost{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+
+
+img{
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+   object-position: center;
+   padding: 2%;
+   opacity: 100%;
+
+   }
+
+   .imglinks{
+    color:rgb(255, 255, 255);
+    font-family: enter;
+    position: relative;
+
+   }
+
+   .imglinks:hover{
+    transition-duration: .5s;
+    opacity: 60%;
+    
+}
+
+
+/* .seriesSCFcontainer{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1% 5vw;
+}
+.gallerySCF{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+} */
+
+
+
+#photodirect{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.photodirect{
+  height: 60vh;
+  padding: 2vw;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+
+#photodirect{
+  animation: 2.5s photodirect normal;
+
+}
+
+@keyframes photodirect{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.gallery{
+  animation: 4s gallery normal;
+
+}
+
+@keyframes gallery{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+#faces{
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
