@@ -23,7 +23,7 @@ function loadGLTF() {
             Mesh = gltf.scene;
             Mesh.scale.set(2,2,2);
             scene.add(Mesh);
-            Mesh.position.x = 0.15;
+            Mesh.position.x = 0;
             Mesh.position.y = 10;
             Mesh.position.z = 14;
         });
